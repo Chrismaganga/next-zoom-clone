@@ -5,8 +5,6 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-import React from 'react';
-import { ReactNode } from "react";
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,8 +16,12 @@ export const metadata: Metadata = {
     icon: "/icons/logo.svg",
   },
 };
-import React from 'react';
 
+
+
+
+
+// eslint-disable-next-line no-undef
 export default function RootLayout({ children }: React.PropsWithChildren<{}>) {
   return (
     <html lang="en">
@@ -46,3 +48,5 @@ export default function RootLayout({ children }: React.PropsWithChildren<{}>) {
     </html>
   );
 }
+
+
